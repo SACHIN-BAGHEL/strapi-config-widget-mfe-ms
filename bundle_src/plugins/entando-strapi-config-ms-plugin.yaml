@@ -1,6 +1,6 @@
-image: sachinbaghel27/config-app:1.0.0
+image: kamleshbobde/ent-strapi-config-app-nv:1.0.0
 dbms: none
-ingressPath: "/entando-template-api"
+ingressPath: "/entando-strapi-config-api"
 healthCheckPath: "/actuator/health"
 roles:
   - "et-first-role"

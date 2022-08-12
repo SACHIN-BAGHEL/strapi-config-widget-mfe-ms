@@ -82,6 +82,7 @@ export default class StrapiSettingForm extends Component {
     }
 
     render() {
+        console.log('render in StrapiSettingForm');
         const { error, baseUrl } = this.state;
         return (
             <div>
@@ -123,16 +124,20 @@ export default class StrapiSettingForm extends Component {
                                         size="md"
                                     ></Spinner>}
                             </Col>
-                            <Col lg={4}></Col>
-                        </Row>
-                        <Row>
-                            <Col lg={8}></Col>
                             <Col lg={4}>
                                 <button className="btn-primary btn"
                                     disabled={!baseUrl || error}>{BUTTON_SAVE}
                                 </button>
                             </Col>
                         </Row>
+                        {/* <Row>
+                            <Col lg={8}></Col>
+                            <Col lg={4}>
+                                <button className="btn-primary btn"
+                                    disabled={!baseUrl || error}>{BUTTON_SAVE}
+                                </button>
+                            </Col>
+                        </Row> */}
                     </Grid>
                 </form>
                 <div>

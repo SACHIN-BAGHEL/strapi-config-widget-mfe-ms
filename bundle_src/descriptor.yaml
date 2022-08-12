@@ -1,5 +1,5 @@
 code: ent-strapi-config-bundle
-description: Template for ent projects-kamlesh
+description: Strapi URL configuration for entando widgets
 components:
   plugins:
     - plugins/entando-strapi-config-ms-plugin.yaml
