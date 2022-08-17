@@ -82,7 +82,6 @@ export default class StrapiSettingForm extends Component {
     }
 
     render() {
-        console.log('render in StrapiSettingForm');
         const { error, baseUrl } = this.state;
         return (
             <div>
