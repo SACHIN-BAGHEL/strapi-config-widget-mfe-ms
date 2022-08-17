@@ -82,7 +82,6 @@ export default class StrapiSettingForm extends Component {
     }
 
     render() {
-        console.log('render in StrapiSettingForm');
         const { error, baseUrl } = this.state;
         return (
             <div>
@@ -143,7 +142,7 @@ export default class StrapiSettingForm extends Component {
                 <div>
                     {this.state.showNotification &&
                         <ToastNotificationList>
-                            <TimedToastNotification onDismiss={null} type={this.state.notificationType}>
+                            <TimedToastNotification onDismiss={()=>this.setState({showNotification: false})} type={this.state.notificationType}>
                                 <span> {this.state.message} </span>
                             </TimedToastNotification>
                         </ToastNotificationList>}
